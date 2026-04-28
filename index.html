@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathan Shomer | DevOps Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio website for Jonathan Shomer, a DevOps engineer focused on cloud infrastructure, CI/CD automation, containers, and resilient systems."
+  >
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Jonathan Shomer</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Jonathan Shomer</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="profile" class="reveal">
+      <div class="section__pic-container profile-pic-container">
+        <img
+          src="photos/profile-pic.png"
+          alt="Jonathan Shomer profile photo"
+          class="profile-pic"
+        >
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jonathan Shomer</h1>
+        <p class="section__text__p2">DevOps Engineer</p>
+        <p class="hero-summary">
+          I build cloud-ready systems with Docker, Kubernetes, Terraform, GitHub Actions,
+          AWS, and Linux, with a strong focus on reliability, automation, and clean delivery.
+        </p>
+        <div class="btn-container">
+          <a class="btn btn-color-2 btn-with-icon" href="Jonathan%20Shomer%20CV.docx" download="Jonathan-Shomer-CV.docx">
+            <img src="photos/cv.png" alt="" class="button-icon">
+            <span>Download CV</span>
+          </a>
+          <a class="btn btn-color-1" href="#contact">Contact Info</a>
+        </div>
+        <div id="socials-container">
+          <a class="social-pill" href="https://www.linkedin.com/in/jonathan-shomer-0b5035258" target="_blank" rel="noreferrer">
+            <img src="photos/linkdin.png" alt="" class="social-icon">
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-pill" href="https://github.com/jonathanjs66" target="_blank" rel="noreferrer">
+            <img src="photos/github.png" alt="" class="social-icon">
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="photos/about-pic.jpg"
+            alt="Jonathan Shomer portrait"
+            class="about-pic"
+          >
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-highlights">
+            <article class="about-highlight">
+              <h3>What I Focus On</h3>
+              <p>Cloud infrastructure, CI/CD automation, containerized workloads, observability, and stable delivery pipelines.</p>
+            </article>
+            <article class="about-highlight">
+              <h3>How I Work</h3>
+              <p>I care about clarity, ownership, and building systems that are easy to operate, troubleshoot, and improve.</p>
+            </article>
+            <article class="about-highlight">
+              <h3>Background</h3>
+              <p>My IDF service as a Sergeant Commander and UAV instructor strengthened my leadership, communication, and calm decision-making under pressure.</p>
+            </article>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a DevOps engineer with a practical, hands-on approach to cloud infrastructure
+              and automation. I enjoy turning manual processes into repeatable workflows,
+              improving deployment confidence, and building environments that are reliable and easy to maintain.
+            </p>
+            <p>
+              My background includes Docker, Kubernetes, Helm, Terraform, GitHub Actions, Argo CD,
+              Prometheus, Grafana, Datadog, Bash, Python, and Linux. I’m especially motivated by work
+              that improves delivery speed, system resilience, and day-to-day operational clarity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Experience</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <article class="details-container">
+            <h3 class="experience-sub-title">DevOps Stack</h3>
+            <div class="article-container">
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Docker</h4>
+                  <p>Containerization</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Kubernetes</h4>
+                  <p>Orchestration</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>AWS</h4>
+                  <p>Cloud Infrastructure</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Terraform</h4>
+                  <p>Infrastructure as Code</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>GitHub Actions</h4>
+                  <p>CI/CD</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Linux</h4>
+                  <p>RHEL and Ubuntu</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Prometheus</h4>
+                  <p>Monitoring</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>Python</h4>
+                  <p>Scripting</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="details-container">
+            <h3 class="experience-sub-title">Certifications</h3>
+            <div class="article-container compact">
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>AWS SAA</h4>
+                  <p>Solutions Architect Associate</p>
+                </div>
+              </article>
+              <article>
+                <div class="mini-icon"></div>
+                <div>
+                  <h4>RHCSA</h4>
+                  <p>Red Hat Certified System Administrator</p>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="experience-details-container">
+        <div class="about-containers project-grid">
+          <article class="details-container color-container">
+            <div class="project-preview">
+              <img
+                src="photos/WouldYouRather.png"
+                alt="WhatWouldYou project preview"
+                class="project-image"
+              >
+            </div>
+            <h3 class="project-title">WhatWouldYou</h3>
+            <p class="project-copy">
+              End-to-end DevOps workflow with Docker, Kubernetes, Helm, GitHub Actions,
+              Argo CD, and Terraform for reproducible, auditable delivery.
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/WouldYouRatherr/WhatWouldYou" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="details-container color-container">
+            <div class="project-preview">
+              <img
+                src="photos/WeTrain.jpg"
+                alt="WeTrain project preview"
+                class="project-image project-image-wetrain"
+              >
+            </div>
+            <h3 class="project-title">WeTrain</h3>
+            <p class="project-copy">
+              Flask and PostgreSQL trainer scheduling app with Docker, role-based access control,
+              session overlap prevention, pytest, and GitHub Actions CI.
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/jonathanjs66/WeTrain" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="details-container color-container">
+            <div class="project-preview">
+              <img
+                src="photos/fruitsdb.png"
+                alt="fruitsdb project preview"
+                class="project-image project-image-fruitsdb"
+              >
+            </div>
+            <h3 class="project-title">fruitsdb</h3>
+            <p class="project-copy">
+              Multi-container inventory app using Node.js, MongoDB, Nginx, Docker Compose,
+              backup and restore flows, and EC2 deployment through GitHub Actions.
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/jonathanjs66/fruitsdb" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <p class="section__text__p1">Get In Touch</p>
+      <h2 class="title">Contact Me</h2>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="photos/email.png" alt="" class="contact-logo">
+          <p><a href="mailto:js.jonathanshomer@gmail.com">js.jonathanshomer@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="photos/linkdin.png" alt="" class="contact-logo contact-logo-linkedin">
+          <p><a href="https://www.linkedin.com/in/jonathan-shomer-0b5035258" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="photos/github.png" alt="" class="contact-logo">
+          <p><a href="https://github.com/jonathanjs66" target="_blank" rel="noreferrer">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; <span id="footer-year"></span> Jonathan Shomer. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
